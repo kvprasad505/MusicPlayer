@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user1.musicplayer.player"
+    tools:showIn="@layout/activity_player"
+    android:background="@drawable/backgroundgradient">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/prefast"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="&#60;&#60;"
+        android:textSize="20dp"
+        android:background="@drawable/button_bg_round"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_above="@+id/sb"
+        android:layout_alignLeft="@+id/sb"
+        android:layout_alignStart="@+id/sb" />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="&#62;&#124;"
+        android:textSize="20dp"
+        android:background="@drawable/button_bg_round"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/playtbn"
+        android:layout_alignLeft="@+id/nextfast"
+        android:layout_alignStart="@+id/nextfast" />
+
+    <Button
+        android:id="@+id/nextfast"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="&#62;&#62;"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/button_bg_round"
+        android:layout_above="@+id/sb"
+        android:layout_alignRight="@+id/sb"
+        android:layout_alignEnd="@+id/sb"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:id="@+id/playtbn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_bg_round"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="stop"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/prebtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="&#124;&#60;"
+        android:textSize="20dp"
+        android:background="@drawable/button_bg_round"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/sb"
+        android:layout_alignRight="@+id/prefast"
+        android:layout_alignEnd="@+id/prefast" />
+
+    <SeekBar
+        android:id="@+id/sb"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextbtn"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp" />
+
+    <TextView
+        android:id="@+id/song_name"
+        tools:text="hdddddddddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>
